@@ -1,0 +1,41 @@
+body{
+    background-color: white;
+}
+a{
+    color: #4099FF;
+    text-decoration: none;
+}
+.twitter-div{
+    display: inline-block;
+    white-space: normal;
+    margin-right: 20px;
+    width: 300px;
+    vertical-align: top;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+.twitter-profile-pic{
+    float: left;
+    display: inline-block;
+    clear: both;
+    vertical-align: middle;
+    border-radius: 5px; 
+}
+.name, .profile-name{
+    display: inline-block;
+}
+.name{
+    font-weight: bold;
+}
+.profile-name{
+    color: gray;
+    padding-left: 5px;
+}
+.twitter-text{
+    overflow: auto;
+    padding-left: 10px;
+}
+#twitter-php-wrap{
+    float: left;
+}

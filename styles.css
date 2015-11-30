@@ -1,0 +1,201 @@
+@font-face{
+    font-family: harlowSolid;
+    src: url(HarlowSolidItalicItalic.ttf);
+}
+@font-face{
+    font-family: Freschezza;
+    src: url("FreschezzaNormal.ttf");
+}
+body{
+    background: url("background.jpg") no-repeat top center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+p{
+    color: #005682;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    color: #005682;
+    font-family: Freschezza;
+    font-size: 60px;
+}
+h2{
+    font-size: 40px;
+    font-family: harlowSolid;
+}
+button{
+    background-color: #005682;
+    color: white;
+    border-radius: 5px;
+}
+.insta-div{
+    display: inline-block;
+    white-space: normal;
+    margin-right: 20px;
+    margin-left: 10px;
+    vertical-align: top;
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f0;
+}
+.profile-pic{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin: 10px;
+    margin-top: none;
+}
+.username{
+    padding-top: 15px;
+    color: #005682;
+    font-weight: bold;
+    text-align: left;
+    float: left;
+    margin-left: 0px;
+}
+.user{
+    text-align: left;
+    float: left;
+    text-decoration: none;
+}
+.likes{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: rgb(75, 79, 84);
+    font-weight: bold;
+}
+.caption{
+    text-align: left;
+    vertical-align: top;
+    color: black;
+    overflow: auto;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+}
+.paging-button {
+  visibility: hidden;
+}
+
+.button-container {
+  clear: both;
+}
+#gorge{
+    color: #5a4432;
+}
+#top-nav{
+    list-style-type: none;
+    text-align: center;
+}
+#top-nav li{
+     display: inline-block;
+     padding-right: 10px;
+     color: white;
+}
+#map{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 5px black;
+}
+#insta{
+    height: 450px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border: 1px solid #005682;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#insta-wrap{
+    background-color: #005682;
+    text-align: center;
+    border: 1px solid #005682;
+    color: white;
+    box-shadow: 10px 10px 5px black;
+    height: 550px;
+    margin-bottom: 50px;
+}
+#twitter{
+    height: 250px;
+    width: 100%;
+    float: none;
+    margin-bottom: 50px;
+    clear: both;
+    box-shadow: 10px 10px 5px black;
+}
+#twitter-wrap{
+    border: 1px solid #4099FF;
+    background-color: #4099FF;
+    text-align: center;
+    color: white;
+    width: 75%;
+    margin: 0 auto;
+    height: 250px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 5px black;
+}
+#street-view {
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 5px black;
+}
+#street-view-header{
+    text-align: left;
+    background-color: #f0f0f0;
+    margin-top: 0;
+    margin-bottom: 100px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px black;
+}
+#wise-h2{
+    text-align: center;
+    background-color: #5a4432;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+/* iPhone 6 */
+@media screen and (max-width: 414px){
+    #twitter-wrap{
+        width: 100%;
+    }
+    #twitter{
+        width: 100%;
+    }
+    #insta-wrap{
+        width: 100%;
+    }
+    
+}
+/* iPhone 5 */
+@media screen and (max-width: 320px){
+    .insta-pic, .insta-div, .user{
+        width: 90%;
+    }
+}
+/* Laptop */
+@media screen and (min-width: 414px){
+    #insta-wrap{
+        width: 338px;
+    }
+}
