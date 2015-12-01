@@ -7,9 +7,9 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     
-    <body>
+    <body id="top">
         <div id="header">
-        <h1 id="main-title">Linville <span id="gorge">Gorge</span></h1>
+        <a href="#top"><h1 id="main-title">Linville <span id="gorge">Gorge</span></h1></a>
             <button class="hamburger">&#9776;</button>
             <button class="cross">&#735;</button>
             </div>
@@ -17,8 +17,8 @@
             <ul>
                 <a href="#map-link"><li>Map</li></a>
                 <a href="#insta-link"><li>Instagram</li></a>
+                <a href="#twitter-link"><li>Twitter</li></a>
                 <a href="#panorama-link"><li>Panorama</li></a>
-                <a href="#twitter-wrap"><li>Twitter</li></a>
             </ul>
         </div>
      <div class="container-fluid">
@@ -29,13 +29,14 @@
             <p id="about-text">The Linville Gorge Wilderness, sometimes called "The Grand Canyon of North Carolina", is 11,651 acres of NC wilderness managed by the Forest Service.
             The wilderness' rock formations, like Table Rock, attract rock climbers of all skill levels. The 39 miles of trails attract hikers and backpackers from
             across the nation. See what others are doing at Linville Gorge by checking out the social media below, or you can plan your trip using the interactive map.</p>
+            <div id="map-link"></div>
             </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-8 col-xs-12">
-                <div class="intro" id="map-link">
-                <h2 class="intro-h2">Plan You Trip</h2>
+                <div class="intro">
+                <h2 class="intro-h2">Plan Your Trip</h2>
                 <p class="intro-text">On this map are four of Linville Gorge's most popular sites. Each has its own unique beauty and adventure.</p>
                 </div>
                  <div id="map"></div>
@@ -45,7 +46,7 @@
                     <h2 class="intro-h2" id="insta-link">What's Up at Linville?</h2>
                     <p class="intro-text">Hear about what people are doing at Linville Gorge and take a look at some of their pictures!</p>
                 </div>
-            <div class="col-md-12 col-sm-8 col-xs-12">
+            <div class="col-md-12 col-sm-8 col-xs-12" id="insta-box">
             <div id ="insta-wrap">
                 <h2>Instagram</h2>
                 <button class="insta-button" id="insta-back-button">Prev</button>
@@ -53,7 +54,7 @@
             <div id="insta"></div>
             </div>
             </div>
-            <div class="col-md-12 col-sm-4 col-xs-12">                
+            <div class="col-md-12 col-sm-4 col-xs-12" id="twitter-box">                
                 <div id="twitter-wrap">
                     <h2>Twitter</h2>
                 <iframe id="twitter" src="twitter.php"></iframe>

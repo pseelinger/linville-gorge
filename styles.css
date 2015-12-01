@@ -198,7 +198,7 @@ h2{
     margin-bottom: 20px;
 }
 #twitter{
-    height: 250px;
+    height: 100%;;
     width: 100%;
     float: none;
     margin-bottom: 50px;
@@ -211,10 +211,11 @@ h2{
     text-align: center;
     color: white;
     width: 75%;
-    margin-top: 20px;
+    margin-top: 30px;
     margin: 0 auto;
-    height: 250px;
     box-shadow: 10px 10px 5px black;
+    overflow: hidden;
+    height: 250px;
 }
 #street-view {
     height: 100%;
@@ -230,7 +231,7 @@ h2{
     padding: 0px;
     height: 100%;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 30px;
     box-shadow: 10px 10px 5px black;
 }
 #wise-h2{
@@ -240,10 +241,14 @@ h2{
     padding-top: 10px;
     padding-bottom: 20px;
 }
+#insta-box, #twitter-box{
+    padding-right: 30px;
+}
 /* iPhone 6 */
 @media screen and (max-width: 414px){
     #twitter-wrap{
         width: 105%;
+        overflow-x: hidden;
     }
     #twitter{
         width: 100%;

@@ -92,7 +92,7 @@ function parseData(json){
                 html += '<div class="pic-caption">';
                 html += '<a href="' + data.link + '">';
                 html += '<img class="insta-pic" src ="' + data.images.low_resolution.url + '">' + '</a>';
-                html += '<p class="likes">' + data.likes.count + ' likes</p>'
+                html += '<p class="likes" id="twitter-link">' + data.likes.count + ' likes</p>'
                 html += '</div></div>';
 			});
 			

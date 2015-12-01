@@ -1,5 +1,6 @@
 body{
     background-color: white;
+    height: 100%;
 }
 a{
     color: #4099FF;
@@ -38,5 +39,7 @@ a{
 }
 #twitter-php-wrap{
     float: left;
-    overflow-x: hidden;
+    height: 100%;
+    max-height: none;
 }
+
