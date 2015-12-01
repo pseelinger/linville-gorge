@@ -251,9 +251,11 @@ h2{
     }
     #insta-wrap{
         width: 105%;
+        float: left;
     }
     #insta{
         width: 100%;
+        float: left;
     }
     #main-title{
         float: left;

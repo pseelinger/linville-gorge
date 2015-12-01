@@ -14,16 +14,16 @@ function initMap() {
   });
   
   var infoRock = new google.maps.InfoWindow({
-    content: "Table Rock"
+    content: "<h3>Table Rock</h3>Table Rock is a mountain in the east rim of Linville Gorge and is a very popular spot for rock climbing. It is perhaps the most recognizable feature at Linville."
   });
   var infoFalls = new google.maps.InfoWindow({
-    content: "Linville Falls"
+    content: "<h3>Linville Falls</h3>Linville Falls is an incredibly scenic waterfall at Linville Gorge. The waterfall drops 90 feet into the 12 mile river below."
   });
   var infoWise = new google.maps.InfoWindow({
-    content: "Wiseman's View"
+    content: "<h3>Wiseman's View</h3>Wiseman's View is a scenic overlook of Linville Gorge. It is easy to hike to as it is located near some of the wilderness' parking area."
   });
   var infoHawk = new google.maps.InfoWindow({
-    content: "Hawksbill Mountain"
+    content: "<h3>Hawksbill Mountain</h3>Hawksbill Mountain is a 4,009 foot summit. The hike to the top is 1.5 miles roundtrip, making it an accessible yet very scenic spot to hike to."
   });
   
   var markerRock = new google.maps.Marker({
