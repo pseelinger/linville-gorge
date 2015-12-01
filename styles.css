@@ -1,6 +1,6 @@
 @font-face{
-    font-family: harlowSolid;
-    src: url(HarlowSolidItalicItalic.ttf);
+    font-family: geoSans;
+    src: url(GeosansLight.ttf);
 }
 @font-face{
     font-family: Freschezza;
@@ -15,10 +15,11 @@ body{
     width: 100%;
 }
 p{
-    color: #005682;
+    color: black;
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
+    font-family: geoSans;
 }
 h1{
     text-align: center;
@@ -27,8 +28,8 @@ h1{
     font-size: 60px;
 }
 h2{
-    font-size: 40px;
-    font-family: harlowSolid;
+    font-size: 30px;
+    font-family: Freschezza;
 }
 #header{
     width:100%; 
@@ -37,6 +38,17 @@ h2{
 	line-height:50px;
     position: fixed;
     z-index: 2;
+}
+.intro-text{
+    background-color: #f0f0f0;
+    font-family: geoSans;
+    padding: 20px;
+    clear: both;
+    text-align: left;
+}
+.intro{
+    background-color: #f0f0f0;
+    box-shadow: 10px 10px 5px black;
 }
 .hamburger{
   background:none;
@@ -106,6 +118,7 @@ h2{
     text-align: left;
     float: left;
     margin-left: 0px;
+    font-family: Helvetica, sans-serif;
 }
 .user{
     text-align: left;
@@ -138,6 +151,20 @@ h2{
 #gorge{
     color: #5a4432;
 }
+.intro-h2{
+    float: left;
+    text-align: left;
+    clear: both;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-left: 20px;
+    background-color: #f0f0f0;
+}
+#main-intro{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
 #about-text{
     box-shadow: 10px 10px 5px black;
     margin-top: 50px;
@@ -166,7 +193,7 @@ h2{
     border: 1px solid #005682;
     color: white;
     box-shadow: 10px 10px 5px black;
-    height: 550px;
+    height: 525px;
     margin: 0 auto;
     margin-bottom: 20px;
 }
@@ -198,17 +225,13 @@ h2{
 }
 #street-view-header{
     text-align: left;
-    background-color: #f0f0f0;
     margin-top: 0;
     margin-bottom: 100px;
     padding: 0px;
     height: 100%;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 100px;
     box-shadow: 10px 10px 5px black;
-}
-#panorama-link{
-    margin-top: 20px;
 }
 #wise-h2{
     text-align: center;
@@ -220,10 +243,11 @@ h2{
 /* iPhone 6 */
 @media screen and (max-width: 414px){
     #twitter-wrap{
-        width: 100%;
+        width: 105%;
     }
     #twitter{
         width: 100%;
+        overflow-x: hidden;
     }
     #insta-wrap{
         width: 105%;
@@ -242,14 +266,27 @@ h2{
     .insta-pic, .insta-div, .user{
         width: 90%;
     }
+    #insta-wrap{
+        width: 250px;
+        height: 375px;
+    }
+    #insta{
+        height: 300px;
+    }
 }
 /* Laptop */
-@media screen and (min-width: 415px){
+@media screen and (min-width: 414px){
     #insta-wrap{
         width: 338px;
     }
     #header{
-        position: fixed;
+        position: static;
         background-color: inherit;
+    }
+}
+@media screen and (min-width: 415px){
+    .hamburger{
+        visibility: hidden;
+        }
     }
 }

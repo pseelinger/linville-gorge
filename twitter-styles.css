@@ -38,4 +38,5 @@ a{
 }
 #twitter-php-wrap{
     float: left;
+    overflow-x: hidden;
 }

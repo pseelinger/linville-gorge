@@ -109,7 +109,7 @@ var j = 0;
 var mq = window.matchMedia( "(max-width: 320px)" );
 $("#insta-button").click(function(event){
   if (mq.matches) {
-    i = 287.5 + i;
+    i = 244 + i;
   }
   else{
     i = 345 + i;
@@ -123,7 +123,7 @@ $("#insta-button").click(function(event){
 $("#insta-back-button").click(function(event){
   // exception for iPhone 5
   if (mq.matches) {
-    i = i - 287.5;
+    i = i - 244;
   }
   else{
    i = i - 345; 
