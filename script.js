@@ -75,7 +75,7 @@ function getData(urlvar) {
         type: "GET",
         dataType: "json",
         url: urlvar,
-        cache: false,
+        
         success: parseData
     })
 }
@@ -103,7 +103,7 @@ function parseData(json){
     }
 var urlvar = "https://api.instagram.com/v1/tags/linville/media/recent?access_token=2265846943.8f953c7.204268a8772143b3960a4d5dda6f3fc6&callback=?";
 getData(urlvar);
-//instagram and twitter "slideshows"
+//instagram "slideshow"
 var i = 0;
 var j = 0;
 var mq = window.matchMedia( "(max-width: 320px)" );
@@ -112,7 +112,7 @@ $("#insta-button").click(function(event){
     i = 287.5 + i;
   }
   else{
-    i = 352 + i;
+    i = 345 + i;
   }
     //check to see if at end of stream
    // if (i >= $('#insta').scrollWidth() ) {
@@ -126,7 +126,7 @@ $("#insta-back-button").click(function(event){
     i = i - 287.5;
   }
   else{
-   i = i - 352; 
+   i = i - 345; 
   }
   //prevent button from glitching when user hits previous on first "slide"
   if (i <= 0) {
@@ -134,3 +134,20 @@ $("#insta-back-button").click(function(event){
   }
   $("#insta").scrollLeft(i);
 })
+//hamburger menu
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+

@@ -30,7 +30,53 @@ h2{
     font-size: 40px;
     font-family: harlowSolid;
 }
-button{
+#header{
+    width:100%; 
+	background:#1d1f20; 
+	height:50px; 
+	line-height:50px;
+    position: fixed;
+    z-index: 2;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:100;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:100;
+}
+.menu{z-index:2; font-weight:bold; font-size:0.8em; width:100%; background:#131313;  position:fixed; text-align:center; margin-top: 50px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu li:hover{display: block;    background:#181818; padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+.menu a{text-decoration:none; color:white;}
+.menu a:hover{text-decoration:none; color:white;}
+.insta-button{
     background-color: #005682;
     color: white;
     border-radius: 5px;
@@ -39,7 +85,7 @@ button{
     display: inline-block;
     white-space: normal;
     margin-right: 20px;
-    margin-left: 10px;
+    margin-left: 3px;
     vertical-align: top;
     background-color: white;
     border: 1px solid #f0f0f0;
@@ -92,14 +138,9 @@ button{
 #gorge{
     color: #5a4432;
 }
-#top-nav{
-    list-style-type: none;
-    text-align: center;
-}
-#top-nav li{
-     display: inline-block;
-     padding-right: 10px;
-     color: white;
+#about-text{
+    box-shadow: 10px 10px 5px black;
+    margin-top: 50px;
 }
 #map{
     height: 100%;
@@ -126,7 +167,8 @@ button{
     color: white;
     box-shadow: 10px 10px 5px black;
     height: 550px;
-    margin-bottom: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 #twitter{
     height: 250px;
@@ -142,17 +184,15 @@ button{
     text-align: center;
     color: white;
     width: 75%;
+    margin-top: 20px;
     margin: 0 auto;
     height: 250px;
-    float: left;
-    margin-top: 20px;
-    margin-bottom: 50px;
     box-shadow: 10px 10px 5px black;
 }
 #street-view {
     height: 100%;
     width: 100%;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 10px 10px 5px black;
 }
@@ -166,6 +206,9 @@ button{
     width: 100%;
     margin-top: 50px;
     box-shadow: 10px 10px 5px black;
+}
+#panorama-link{
+    margin-top: 20px;
 }
 #wise-h2{
     text-align: center;
@@ -183,7 +226,14 @@ button{
         width: 100%;
     }
     #insta-wrap{
+        width: 105%;
+    }
+    #insta{
         width: 100%;
+    }
+    #main-title{
+        float: left;
+        font-size: 20px;
     }
     
 }
@@ -194,8 +244,12 @@ button{
     }
 }
 /* Laptop */
-@media screen and (min-width: 414px){
+@media screen and (min-width: 415px){
     #insta-wrap{
         width: 338px;
+    }
+    #header{
+        position: fixed;
+        background-color: inherit;
     }
 }

@@ -8,43 +8,50 @@
     </head>
     
     <body>
+        <div id="header">
+        <h1 id="main-title">Linville <span id="gorge">Gorge</span></h1>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            </div>
+            <div class="menu">
+            <ul>
+                <a href="#map-link"><li>Map</li></a>
+                <a href="#insta-link"><li>Instagram</li></a>
+                <a href="#panorama-link"><li>Panorama</li></a>
+                <a href="#twitter-wrap"><li>Twitter</li></a>
+            </ul>
+        </div>
      <div class="container-fluid">
         <div class="row">
             <div class='col-md-12'>
-            <h1>Linville <span id="gorge">Gorge</span></h1>
-            <ul id="top-nav">
-                <li><a href="#map">Map</a></li>
-                <li><a href="#insta-link">Instagram</a></li>
-                <li><a href="#street-view">Panorama</a></li>
-                <li><a href="#twitter">Twitter</a></li>
-            </ul>
-            <p style="box-shadow: 10px 10px 5px black;">The Linville Gorge Wilderness, sometimes called "The Grand Canyon of North Carolina", is 11,651 acres of NC wilderness managed by the Forest Service.
+            <p id="about-text">The Linville Gorge Wilderness, sometimes called "The Grand Canyon of North Carolina", is 11,651 acres of NC wilderness managed by the Forest Service.
             The wilderness' rock formations, like Table Rock, attract rock climbers of all skill levels. The 39 miles of trails attract hikers and backpackers from
             across the nation. See what others are doing at Linville Gorge by checking out the social media below, or you can plan your trip using the interactive map.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8 col-xs-12">
+            <div class="col-md-8 col-xs-12" id="map-link">
                  <div id="map"></div>
             </div>
-            <div class="col-md-4 col-xs-12">
-                <div id="insta-link"></div>
+        <div class="col-md-4 col-xs-12">
+            <div class="col-md-12 col-sm-8 col-xs-12" id="insta-link">
             <div id ="insta-wrap">
                 <h2>Instagram</h2>
-                <button id="insta-back-button">Prev</button>
-                <button id="insta-button">Next</button>
+                <button class="insta-button" id="insta-back-button">Prev</button>
+                <button class="insta-button" id="insta-button">Next</button>
             <div id="insta"></div>
             </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-12 col-sm-4 col-xs-12">                
                 <div id="twitter-wrap">
                     <h2>Twitter</h2>
                 <iframe id="twitter" src="twitter.php"></iframe>
                 </div>
             </div>
         </div>
-        <div class="row" id="twitter-nav">
-            <div class="col-md-12">
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="panorama-link">
                 <div id="street-view-header">
                 <h2 id="wise-h2">The View From Wiseman's View</h2>
                 <p>Explore the beautiful scenery of Linville Gorge via Google's Street View. Tap the icon in the top right corner to go fullscreen.</p>
@@ -55,7 +62,6 @@
      </div>
     
      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
      <script async defer
        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6rO2yjkehDyyI0P_pIh2pUh5zpscAMn4&callback=initMap">
      </script>
