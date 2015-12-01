@@ -114,10 +114,10 @@ $("#insta-button").click(function(event){
   else{
     i = 345 + i;
   }
-    //check to see if at end of stream
-   // if (i >= $('#insta').scrollWidth() ) {
-  //  i = $('#insta').scrollLeft();
-  //  }
+    //Limit display to 15 pictures
+    if (i > 5175) {
+    i = 5175;
+   }
     $("#insta").scrollLeft(i);
   });
 $("#insta-back-button").click(function(event){
